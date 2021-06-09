@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+/* ################## Nave Bar Settings ############ */
+section.container{
+    background: #000;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 90%, 0 100%);
+}
+section div nav.menu ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    align-items: center;
+    list-style: none;
+}
+section div nav.menu ul li.ddm{
+    display: none;
+}
+section div nav.menu ul li a{
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.2rem;
+    color: #fff;
+    justify-content: center;
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: .3s ease-in-out;
+}
+section div nav.menu ul li a:hover{
+    color: cyan;
+}
+
+section div nav.menu ul li a img{
+    height: 30px;
+    width: 80px;
+}
+/* ################ End Nav Bar Setting ############ */
+/* ################ Heero Section ################## */
+section.hero{
+    display: flex;
+    align-items: center;
+}
+section.hero div.imag img{
+    height: 450px;
+    width: 450px;
+  
+}
+
+section div.metter h1{
+    font-size: 3rem;
+    color: crimson;
+}
+section div.metter h1 span{
+    color: cyan;
+}
+section div.metter p{
+    color: #fff;
+    margin-top: 2rem;
+    text-align: justify;
+    padding-right: 20%;
+}
+section div.metter button{
+    background: transparent;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    color: cyan;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    border: cyan solid;
+    border-radius: .7rem;
+    transition: .5s ease-in-out;
+}
+section div.metter button:hover{
+    background: cyan;
+    color: crimson;
+    border: crimson solid;
+}
+
+
+
+/* ################ End Of Hero Section ############ */
+
+/* ############ Mobile settings #################### */
+@media screen and (max-width: 1024px) {
+    section div nav.menu ul li:not(:nth-child(1)){
+        display: none;
+    }
+    section div nav.menu ul li.ddm{
+        display: flex;
+        padding-right: 10%;
+    }
+    section div nav.menu ul{
+        justify-content: space-between;
+    }
+    section.hero div.imag img{
+        height: 320px;
+        width: 320px;
+      
+    }
+    section.hero{
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 1rem;
+
+    }
+    section div.metter p{
+     font-size: 17px;
+     padding-right: 0;
+     margin: 10px 15px;
+
+}
+section div.metter h1{
+    font-size: 1.4rem;
+}
+section div.metter button{
+       padding: .2rem 1rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    border-radius: .7rem;
+}
+
+}
+
+/* ############ End Mobile settings ############### */
