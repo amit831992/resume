@@ -113,7 +113,10 @@ section div.metter button:hover{
 
 }
 section div.metter h1{
-    font-size: 1.4rem;
+    font-size: 3rem;
+}
+section div.metter h1 span{
+    font-size: 2rem;
 }
 section div.metter button{
        padding: .2rem 1rem;
