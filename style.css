@@ -189,7 +189,7 @@ div p.work-history-info{
     border: cyan solid;
     max-width: 600px;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     border-radius: 10px;
     padding-left: 10%;
     padding-right: 10%;
@@ -206,10 +206,84 @@ section.work-history div.work-history-top{
     padding-bottom: 20px;
     text-align: justify;
 }
+/* ############### End of Work History Top ######### */
+/* ############## Work History Metter ############## */
+div.work-history-metter{
+    display: grid;
+    grid-template-columns: 200px 600px;
+    grid-template-rows: 200px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 3%;
+    column-gap: 5px;
+}
+div.work-history-metter div.organisation h1{
+    text-align: center;
+    color: crimson;
+    border-radius: 10px;
+    height: 150px;
+    background: rgba(0, 0, 0, .7);
+    text-transform: uppercase;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 15%;
+    text-shadow: 0 0 .5rem crimson;
+}
+div.work-history-metter div.explanation p{
+    color: #fff;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    height: 150px;
+    text-transform: capitalize;
+    text-align: justify;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+}
 
+/* ############## End Work History Metter ########## */
 /* ############ End Work history ################## */
 
-
+/* ################ education ##################### */
+div h1.education-name{
+    color: cyan;
+    font-size: 3rem;
+    padding-top: 3%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 3%;
+}
+div h1.education-name span{
+    color: crimson;
+}
+div p.education-info{
+    border: cyan solid;
+    max-width: 600px;
+    color: #95A5A6;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    box-shadow: inset 0 0 .3em cyan,
+    0 0 .3em cyan;
+}
+section.education div.education-top{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+/* ################ End education ################# */
 
 
 
@@ -276,7 +350,17 @@ div.skil-text p.skil-explanation{
 /* ############### End Skill Section ############# */
 /* ############### Work History ################## */
 div p.work-history-info{
-    max-width: 300px;
+    max-width: 350px;
+}
+div.work-history-metter{
+    grid-template-columns: 260px;
+    grid-template-rows: auto;
+    row-gap: 5px;
+    
+}
+div.work-history-metter div.explanation p{
+    font-size: .8rem;
+    height: 200px;
 }
 /* ############### End Work History ############### */
 }
