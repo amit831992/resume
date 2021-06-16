@@ -283,8 +283,82 @@ section.education div.education-top{
     padding-bottom: 20px;
     text-align: justify;
 }
+/* ############### Education Matter ############### */
+div.education-metter{
+    display: grid;
+    grid-template-columns: 200px 600px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    column-gap: 3px;
+    row-gap: 5px;
+    padding-bottom: 25px;
+}
+div.education-metter div.class-name{
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 25, 8);
+    border-radius: 10px;
+    text-align: center;
+    height: 150px;
+    padding-top: 10%;
+    padding-left: 2%;
+    font-size: 1.2rem;
+}
+div.education-metter div.class-detail{
+    background: rgb(44, 5, 5);
+    color: #fff;
+    height: 150px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    padding-top: 4%;
+    padding-left: 2%;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+/* ############### End Education Matter ############ */
 /* ################ End education ################# */
+/* ############### Achivement ##################### */
+/* ############### Achivement Top ################# */
+div h1.achivement-name{
+    color: cyan;
+    font-size: 3rem;
+    padding-top: 3%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 3%;
+}
+div h1.achivement-name span{
+    color: crimson;
+}
+div p.achivement-info{
+    border: cyan solid;
+    max-width: 600px;
+    color: #95A5A6;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    box-shadow: inset 0 0 .3em cyan,
+    0 0 .3em cyan;
+}
+section.achivement div.achivement-top{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    text-align: justify; 
+}
+section.achivement{
+    background: rgb(2, 37, 21);
+}
 
+/* ############### End Achivement Top ############## */
+/* ############### End Achivement ################# */
 
 
 
@@ -363,5 +437,16 @@ div.work-history-metter div.explanation p{
     height: 200px;
 }
 /* ############### End Work History ############### */
+/* ################# Education metter ############## */
+div.education-metter{
+    grid-template-columns: 280px;    
+}
+div.education-metter div.class-detail{
+   line-height: 1.8rem;
+   text-align: center;
+   padding-left: 4%;
+   padding-right: 4%;
+}
+/* ############# End Education metter ############## */
 }
 /* ############ End Mobile settings ############### */
