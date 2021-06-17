@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 /* ################## Nave Bar Settings ############ */
 section.container{
@@ -356,10 +357,87 @@ section.achivement div.achivement-top{
 section.achivement{
     background: rgb(2, 37, 21);
 }
-
+/* ############### Achivement Metter ############### */
+div.achivement-metter{
+    display: grid;
+    grid-template-columns: 260px 600px;
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding-bottom: 50px;
+}
+div.achivement-name h1{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    border: #fff solid;
+    height: 300px;
+    border-radius: 15px;
+    padding-top: 10%;
+    font-size: 2rem;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+div.achivement-detail ul{
+    list-style: '\21D2';
+    line-height: 20px;
+    color: #fff;
+    border: #fff solid;
+    border-radius: 15px;
+    height: 300px;
+    padding-top: 4%;
+    padding-left: 3%;
+}
+div.achivement-detail ul li{
+    padding-left: 3%;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+/* ########### End Achivement Metter ############### */
 /* ############### End Achivement Top ############## */
 /* ############### End Achivement ################# */
-
+/* ############### Contact ######################### */
+/* ################ Contact Top ################### */
+div h1.contact-name{
+    color: cyan;
+    font-size: 3rem;
+    padding-top: 3%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 3%;
+}
+div h1.contact-name span{
+    color: crimson;
+}
+div p.contact-info{
+    border: cyan solid;
+    max-width: 600px;
+    color: #95A5A6;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    box-shadow: inset 0 0 .3em cyan,
+    0 0 .3em cyan;
+}
+section.contact div.contact-top{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    text-align: justify; 
+}
+/* ################ End Contact Top ############## */
+/* ############### End Contact #################### */
 
 
 
@@ -448,5 +526,11 @@ div.education-metter div.class-detail{
    padding-right: 4%;
 }
 /* ############# End Education metter ############## */
+/* ############# Achivement ######################## */
+div.achivement-metter{
+    grid-template-columns: 280px;
+    
+}
+/* ############# EndAchivement #################### */
 }
 /* ############ End Mobile settings ############### */
