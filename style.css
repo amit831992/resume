@@ -437,8 +437,113 @@ section.contact div.contact-top{
     text-align: justify; 
 }
 /* ################ End Contact Top ############## */
+/* ################## Contact metter ############### */
+div.contact-metter{
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+div.contact-metter div.mobile{
+    border-radius: 10px;
+    padding: 30px;
+    background: #95A5A6;
+    box-shadow: inset 0 0 .5rem, 0 0 2rem;
+    height: 300px;
+}
+div.mobile-name img{
+    height: 35px;
+    width: 35px;
+    background: cyan;
+    border-radius: 50%;
+    padding: 5px;
+}
+div.mobile-name{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: #000 solid;
+    padding-bottom: 1.2rem;
+}
+div.contact-metter div.mobile ul{
+    list-style: none;
+    text-align: center;
+    padding-top: 20%;
+}
+div.contact-metter div.mobile ul li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: cyan;
+    font-weight: 600;
+}
+div.contact-metter div.mobile ul li{
+    line-height: 2rem;
+}
+div.contact-metter div.mobile h1{
+    color: crimson;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+div.contact-metter div.mobile ul li.Canada a{
+    font-size: 1.1rem;
+}
+div.contact-metter div.mobile ul li.Canada::after{
+    content: '(Canada)';
+    font-size: 1rem;
+    font-weight: 600;
+}
+div.contact-metter div.mobile ul li.India a{
+    font-size: 1.2rem;
+}
+div.contact-metter div.mobile ul li.India::after{
+    content: '(India)';
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* ############## End Contact metter ############### */
 /* ############### End Contact #################### */
-
+/* ############## Fotter ########################## */
+footer div.footer div a img{
+    height: 40px;
+    width: 40px;
+}
+footer div.footer div a img:hover{
+    background: cyan;
+    padding: 5px;
+    border-radius: 20%;
+}
+footer div.footer{
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+div.footer p{
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 300;
+}
+footer{
+    background: #000;
+}
+footer p.right{
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 20px;
+    padding-bottom: 2%;
+}
+/* ############## End Fotter ###################### */
 
 
 
@@ -451,10 +556,24 @@ section.contact div.contact-top{
     section div nav.menu ul li.ddm{
         display: flex;
         padding-right: 10%;
+        position: absolute;
+        right: 5%;
     }
     section div nav.menu ul{
         justify-content: space-between;
     }
+    section div nav.menu.drop ul{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+    
+    section div nav.menu.drop ul li{
+        display: flex;
+    }
+
+
+
     section.hero div.imag img{
         height: 320px;
         width: 320px;
@@ -532,5 +651,11 @@ div.achivement-metter{
     
 }
 /* ############# EndAchivement #################### */
+/* ################## Contact ##################### */
+div.contact-metter{
+    grid-template-columns: 250px;
+    row-gap: 3rem;
+}
+/* ################## End Contact ################ */
 }
 /* ############ End Mobile settings ############### */
