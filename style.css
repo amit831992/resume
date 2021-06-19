@@ -376,7 +376,7 @@ div.achivement-name h1{
     text-transform: uppercase;
     text-align: center;
     border: #fff solid;
-    height: 300px;
+    height: 320px;
     border-radius: 15px;
     padding-top: 10%;
     font-size: 2rem;
@@ -389,7 +389,7 @@ div.achivement-detail ul{
     color: #fff;
     border: #fff solid;
     border-radius: 15px;
-    height: 300px;
+    height: 320px;
     padding-top: 4%;
     padding-left: 3%;
 }
@@ -398,6 +398,8 @@ div.achivement-detail ul li{
     text-transform: capitalize;
     font-size: 1.2rem;
     line-height: 1.2rem;
+    text-align: justify;
+    padding-right: 10%;
 }
 /* ########### End Achivement Metter ############### */
 /* ############### End Achivement Top ############## */
@@ -496,6 +498,7 @@ div.contact-metter div.mobile ul li.Canada::after{
     content: '(Canada)';
     font-size: 1rem;
     font-weight: 600;
+    color: crimson;
 }
 div.contact-metter div.mobile ul li.India a{
     font-size: 1.2rem;
@@ -504,6 +507,7 @@ div.contact-metter div.mobile ul li.India::after{
     content: '(India)';
     font-size: 1rem;
     font-weight: 600;
+    color: crimson;
 }
 /* ############## End Contact metter ############### */
 /* ############### End Contact #################### */
@@ -650,9 +654,16 @@ div.education-metter div.class-detail{
 }
 /* ############# End Education metter ############## */
 /* ############# Achivement ######################## */
+div.achivement-name h1{
+    height: 200px;    
+}
 div.achivement-metter{
     grid-template-columns: 280px;
     
+}
+div.achivement-detail ul{
+    padding-left: 10%;
+
 }
 /* ############# EndAchivement #################### */
 /* ################## Contact ##################### */
