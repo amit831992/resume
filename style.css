@@ -5,6 +5,36 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+.myBtn {
+
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 9999; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: crimson; /* Set a background color */
+    color: cyan; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /*Rounded corners*/
+    font-size: 2rem; /* Increase font size */
+    font-weight: 900;
+    transition: .5s ease-in-out;
+  }
+  
+  .myBtn:hover {
+    background-color: cyan;
+    color: crimson;
+  }
+
+
+
+
+
+
 /* ################## Nave Bar Settings ############ */
 section.container{
     background: #000;
@@ -104,7 +134,7 @@ section.skills p.skill-info{
     font-size: 1.2rem;
     color: #95A5A6;
     font-weight: 700;
-    max-width: 650px;
+    max-width: 800px;
     border-radius: .5rem;
     margin-bottom: 2rem;
     padding: 1rem;
@@ -116,10 +146,10 @@ section.skills div.skil-top{
    align-items: center;  
 }
 
-/* ############ Skill Topins ###################*/
+/* ############ Skill Topiks ###################*/
 div.skil-imag img {
     height: 100%;
-    width: 260px;
+    width: 100%;
     border-radius: 10px;
     
 }
@@ -144,7 +174,6 @@ div.skill-topic{
     row-gap: 3px;
     justify-content: center;
     justify-items: center;
-    height: auto;
     margin-bottom: 5rem;
     align-content: center;
 }
@@ -159,6 +188,8 @@ div.skil-text{
     background: #283d3f;
     border-radius: 10px;
     width: 600px;
+    height: auto;
+    padding-bottom: 2%;
 }
 div.skil-text p.skil-explanation{
     font-size: 1.2rem;
@@ -189,7 +220,7 @@ div h1.work-history-name span{
 }
 div p.work-history-info{
     border: cyan solid;
-    max-width: 600px;
+    max-width: 800px;
     color: #fff;
     font-size: 1.6rem;
     border-radius: 10px;
@@ -220,12 +251,13 @@ div.work-history-metter{
     align-items: center;
     padding-bottom: 3%;
     column-gap: 5px;
+    row-gap: 5px;
 }
 div.work-history-metter div.organisation h1{
     text-align: center;
     color: crimson;
     border-radius: 10px;
-    height: 150px;
+    height: 200px;
     background: rgba(0, 0, 0, .7);
     text-transform: uppercase;
     align-items: center;
@@ -240,7 +272,7 @@ div.work-history-metter div.explanation p{
     font-size: 1.2rem;
     background: rgba(0, 0, 0, .7);
     border-radius: 10px;
-    height: 150px;
+    height: 200px;
     text-transform: capitalize;
     text-align: justify;
     padding-left: 2%;
@@ -376,7 +408,7 @@ div.achivement-name h1{
     text-transform: uppercase;
     text-align: center;
     border: #fff solid;
-    height: 320px;
+    height: 270px;
     border-radius: 15px;
     padding-top: 10%;
     font-size: 2rem;
@@ -385,21 +417,20 @@ div.achivement-name h1{
 }
 div.achivement-detail ul{
     list-style: '\21D2';
-    line-height: 20px;
     color: #fff;
+    line-height: 1.5rem;
     border: #fff solid;
     border-radius: 15px;
-    height: 320px;
+    height: 270px;
+    width: 600px;
     padding-top: 4%;
-    padding-left: 3%;
+    padding-left: 5%;
 }
 div.achivement-detail ul li{
     padding-left: 3%;
     text-transform: capitalize;
     font-size: 1.2rem;
-    line-height: 1.2rem;
     text-align: justify;
-    padding-right: 10%;
 }
 /* ########### End Achivement Metter ############### */
 /* ############### End Achivement Top ############## */
@@ -448,6 +479,7 @@ div.contact-metter{
     justify-items: center;
     align-items: center;
     align-content: center;
+    text-align: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
@@ -482,6 +514,11 @@ div.contact-metter div.mobile ul li a{
     font-size: 1.4rem;
     color: cyan;
     font-weight: 600;
+    transition: .5s ease-in-out;
+}
+div.contact-metter div.mobile ul li a:hover{
+    color: crimson;
+    font-weight: 900;
 }
 div.contact-metter div.mobile ul li{
     line-height: 2rem;
@@ -613,49 +650,65 @@ section div.metter button{
 }
 /* ############### End Heero Section ############# */
 /* ############### start Skill Section ############# */
+section.skills p.skill-info{
+    max-width: 350px;
+}
 div.skil-text{
-     width: 260px;
-     height: 260px;
+     width: 100%;
+     height: auto;
+     padding-bottom: 2%;
 }
 div.skill-topic{
-    grid-template-columns: 260px;
+    grid-template-columns: 80%;
 }
 div.skil-text h1{
-    font-size: 1rem;    
+    font-size: 1.5rem;    
 }
 div.skil-text p.skil-explanation{
-    font-size: .7rem;
+    font-size: 1.2rem;
 }
 /* ############### End Skill Section ############# */
 /* ############### Work History ################## */
 div p.work-history-info{
     max-width: 350px;
+    padding: 3%;
 }
 div.work-history-metter{
-    grid-template-columns: 260px;
+    grid-template-columns: 80%;
     grid-template-rows: auto;
     row-gap: 5px;
+    height: auto;
     
 }
 div.work-history-metter div.explanation p{
-    font-size: .8rem;
-    height: 200px;
+    font-size: 1.2rem;
+    height: auto;
+    padding: 4%;
 }
 /* ############### End Work History ############### */
 /* ################# Education metter ############## */
 div.education-metter{
-    grid-template-columns: 280px;    
+    grid-template-columns: 80%; 
+    height: auto;
+    width: 100%;
+}
+div p.education-info {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
 }
 div.education-metter div.class-detail{
    line-height: 1.8rem;
    text-align: center;
    padding-left: 4%;
    padding-right: 4%;
+   height: auto;
+   text-align: left;
 }
 /* ############# End Education metter ############## */
 /* ############# Achivement ######################## */
 div.achivement-name h1{
-    height: 200px;    
+    height: 180px;    
 }
 div.achivement-metter{
     grid-template-columns: 280px;
@@ -663,14 +716,45 @@ div.achivement-metter{
 }
 div.achivement-detail ul{
     padding-left: 10%;
-
+    height: auto;
+    width: 100%;
+    padding-right: 5%;
 }
-/* ############# EndAchivement #################### */
+div p.achivement-info{
+    max-width: 350px;
+}
+/* ############# End Achivement #################### */
 /* ################## Contact ##################### */
 div.contact-metter{
-    grid-template-columns: 250px;
+    grid-template-columns: 80%;
     row-gap: 3rem;
+    height: auto;
+    width: 100%;
+}
+div.contact-metter div.mobile{
+    width: 100%;
+}
+div.contact-metter div.mobile div.mobile-name{
+    text-align: center;
+    margin: auto;
+}
+div p.contact-info{
+    max-width: 350px;
 }
 /* ################## End Contact ################ */
+#myBtn {
+    bottom: 2%; /* Place the button at the bottom of the page */
+    right: 3%; /* Place the button 30px from the right */
+    z-index: 9999; /* Make sure it does not overlap */
+    background-color: crimson; /* Set a background color */
+    padding: 10px; /* Some padding */
+    font-size: 1rem; /* Increase font size */
+    font-weight: 600;
+    transition: .5s ease-in-out;
+  }
+
+
+
+
 }
 /* ############ End Mobile settings ############### */
